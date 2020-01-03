@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Intentions() {
+export default function Palette() {
   const classes = useStyles();
   const theme = useTheme();
 

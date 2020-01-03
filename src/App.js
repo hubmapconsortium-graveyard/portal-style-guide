@@ -7,7 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/core/Menu';
 import Button from '@material-ui/core/Button';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Intentions from './Intentions';
+import Palette from './Palette';
 import Types from './Types';
 import Grid from '@material-ui/core/Grid';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
@@ -71,7 +71,7 @@ function PaletteDemo() {
         <Typography variant="subtitle1" gutterBottom>
           Light Variant
         </Typography>
-        <Intentions />
+        <Palette />
       </Grid>
       <Grid item sm={6} xs={6} style={{ padding: theme.spacing(5) }}>
         <Typography variant="h4" component="h1" gutterBottom>
@@ -80,7 +80,7 @@ function PaletteDemo() {
         <Typography variant="subtitle1" gutterBottom>
           Dark Variant
         </Typography>
-        <Intentions />
+        <Palette />
       </Grid>
       </Grid>
       <Footer />

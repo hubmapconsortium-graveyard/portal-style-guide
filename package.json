@@ -1,8 +1,8 @@
 {
-  "name": "style-guide",
+  "name": "portal-style-guide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hubmapconsortium.github.io/style-guide",
+  "homepage": "http://hubmapconsortium.github.io/portal-style-guide",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

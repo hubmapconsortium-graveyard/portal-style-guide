@@ -5,10 +5,10 @@ import "typeface-inter"
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#636363',
+      main: '#444A65',
     },
     secondary: {
-      main: '#444A65',
+      main: '#636363',
     },
     error: {
       main: '#DA348A',
