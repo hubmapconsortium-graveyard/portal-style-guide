@@ -2,25 +2,29 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme, rgbToHex } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    width: '100%',
-    maxWidth: 600,
-  },
   group: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(2),
   },
   color: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'start',
     '& div:first-of-type': {
       width: theme.spacing(6),
       height: theme.spacing(6),
       marginRight: theme.spacing(1),
-      borderRadius: theme.shape.borderRadius,
     },
   },
+  chip: {
+    display: 'flex',
+    minWidth: '50px',
+    maxWidth: '100px',
+    minHeight: '50px',
+    maxHeight: '50px',
+    borderRadius: '50%'
+  }
 }));
 
 export default function Palette() {
@@ -29,7 +33,7 @@ export default function Palette() {
 
   const item = (color, name) => (
     <Grid item xs={12} sm={4} className={classes.color}>
-      <div style={{ backgroundColor: color }} />
+      <Box className={classes.chip} style={{ backgroundColor: color }} />
       <div>
         <Typography variant="body2">{name}</Typography>
         <Typography variant="body2" color="textSecondary">
@@ -40,7 +44,7 @@ export default function Palette() {
   );
 
   return (
-    <div className={classes.root}>
+    <div>
       <Typography gutterBottom className={classes.group}>
         Primary
       </Typography>

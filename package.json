@@ -11,6 +11,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "clsx": "latest",
     "typeface-inter": "latest",
     "react-router-dom": "latest"

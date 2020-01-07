@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import "typeface-inter"
 
-// A custom theme for this app
+// default HuBMAP color and font theme
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -20,22 +20,56 @@ const theme = createMuiTheme({
       main: '#3781D1',
     },
     success: {
-      main: '#9BC551'
+      main: '#6C8938' //'#9BC551'
     },
     type: "light"
   },
-  typography: {
+  typography: {    
     fontFamily: "Inter, Helvetica, Arial, sans-serif",
-    h6: {
-      fontWeight: 700
-    },    
+    h1: {
+      fontWeight: 300,
+      fontSize: '2.6rem'
+    },
+    h2: {
+      fontWeight: 300,
+      fontSize: '2.3rem'
+    },
+    h3: {
+      fontWeight: 300,
+      fontSize: '2rem'
+    },
     h4: {
-      fontWeight: 300
+      fontWeight: 300,
+      fontSize: '1.6rem'
+    },
+    h5: {
+      fontWeight: 300,
+      fontSize: '1.3rem'
+    },    
+    h6: {
+      fontWeight: 300,
+      fontSize: '1rem'
+    },    
+    subtitle1: {
+      fontWeight: 500,
+      color: "#444a65",
+      fontSize: '1.1rem'
+    },
+    subtitle2: {
+      fontWeight: 500,
+      color: "#444a65"
+    },
+    body1: {
+      fontSize: '0.95rem'
+    },
+    body2: {
+      fontSize: '0.8rem'
     },
     button: {
-      fontWeight: 700,  
+      fontWeight: 500,  
       textTransform: 'capitalize'
     }
+
   },
   shape: {
     borderRadius: 2
