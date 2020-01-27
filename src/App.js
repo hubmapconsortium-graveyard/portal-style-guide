@@ -74,7 +74,7 @@ function PaletteDemo() {
           Palette
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          Inspired by orginal HuBMAP logo art.
+          Inspired by orginal HuBMAP logo art
         </Typography>
         <Typography variant="body1">
           The colors used in the Material UI color theme for the HuBMAP Portal were inspired by the artwork of the HuBMAP logo designed by NIH.
