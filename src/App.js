@@ -74,7 +74,7 @@ function PaletteDemo() {
           Palette
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          Inspired by orginal HuBMAP logo art.
+          Inspired by orginal HuBMAP logo art
         </Typography>
         <Typography variant="body1">
           The colors used in the Material UI color theme for the HuBMAP Portal were inspired by the artwork of the HuBMAP logo designed by NIH.
@@ -273,7 +273,7 @@ function Header() {
 
 function HubmapType(props) {
   return (
-    <svg viewBox="0 0 700 162" class={props.className}>
+    <svg viewBox="0 0 700 162" className={props.className}>
       <path d="M99.9,0.47v161.37H56.26V94.06H43.2v67.78H-0.44V0.47H43.2v57.71h13.06V0.47H99.9z M212.06,29.57v132.26h-42.6l0.73-10.99
         c-2.9,4.46-6.48,7.8-10.73,10.04c-4.25,2.23-9.14,3.34-14.67,3.34c-6.29,0-11.51-1.06-15.65-3.19c-4.15-2.13-7.2-4.95-9.17-8.47
         c-1.97-3.52-3.2-7.19-3.68-11.01c-0.48-3.82-0.73-11.41-0.73-22.77V29.57h41.88v90c0,10.3,0.33,16.41,0.98,18.34
