@@ -25,7 +25,7 @@ jobs:
     - name: Deploy
       # TODO: Make sure the build works with every commit,
       # but only push on merge to master.
-      # if:
+      if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
