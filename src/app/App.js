@@ -15,6 +15,7 @@ import { Container } from '@material-ui/core';
 import hubmaplogo from './hubmap-person.svg';
 import TypographyDemo from './TypographyDemo';
 import PaletteDemo from './PaletteDemo';
+import CssDemo from './CssDemo';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -23,6 +24,9 @@ export default function App() {
   return (
     <Router basename="/">
       <Switch>
+        <Route path="/css">
+          <CssDemo />
+        </Route>
         <Route path="/palette">
           <PaletteDemo />
         </Route>
@@ -37,7 +41,7 @@ export default function App() {
   );
 }
 
-function Home() {
+export function Home() {
   const theme = useTheme();
 
   return (
