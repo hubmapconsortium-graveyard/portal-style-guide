@@ -106,7 +106,7 @@ function PaletteDemo() {
             Application to Controls
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Colors from the HuBMAP Portal palette can be applied to controls to be used in the interface.
+            Colors from the HuBMAP Portal palette can be applied to alert boxes.
           </Typography>
           <Paper style={{ padding: theme.spacing(2) }} align="center">
           <MessageBar
