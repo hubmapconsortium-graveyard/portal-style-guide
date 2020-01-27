@@ -4,17 +4,17 @@
   "private": true,
   "homepage": "http://hubmapconsortium.github.io/portal-style-guide",
   "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "clsx": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router-dom": "latest",
     "react-scripts": "3.3.0",
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "latest",
-    "clsx": "latest",
-    "typeface-inter": "latest",
-    "react-router-dom": "latest"
+    "typeface-inter": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,7 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "devDependencies": {}
 }
