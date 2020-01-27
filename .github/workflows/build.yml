@@ -22,12 +22,6 @@ jobs:
     - run: npm run build --if-present
     # TODO: - run: npm test
 
-    - name: Deploy
-      # TODO: Make sure the build works with every commit,
-      # but only push on merge to master.
-      # if:
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    - run: npm run deploy
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
