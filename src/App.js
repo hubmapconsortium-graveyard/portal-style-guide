@@ -87,7 +87,7 @@ function PaletteDemo() {
             Material Color Palette
           </Typography>
           <Paper style={{ padding: theme.spacing(2) }} width="100%">
-            <Palette /> 
+            <Palette />
           </Paper>
         </Grid>
         <Grid item sm={12} lg={6}  style={{ padding: theme.spacing(2) }}>
@@ -106,9 +106,9 @@ function PaletteDemo() {
             Application to Controls
           </Typography>
           <Typography variant="body1" gutterBottom>
-            The below is an example how the colors from the HuBMAP Portal palette can be applied to controls to be used in the interface.
+            Colors from the HuBMAP Portal palette can be applied to controls to be used in the interface.
           </Typography>
-          <Paper style={{ padding: theme.spacing(2) }} align="center">            
+          <Paper style={{ padding: theme.spacing(2) }} align="center">
           <MessageBar
             variant="error"
             className={classes.margin}
@@ -144,7 +144,7 @@ function TypographyDemo() {
   const theme = useTheme();
 
   return (
-    <Grid>      
+    <Grid>
       <Header />
       <Container maxWidth="lg">
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
@@ -160,7 +160,7 @@ function TypographyDemo() {
       </Grid>
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
         <Typography variant="h3" gutterBottom>
-          Material Font Styles 
+          Material Font Styles
         </Typography>
         <Paper style={{ padding: theme.spacing(2) }}>
           <Types />
@@ -192,7 +192,7 @@ function Home() {
             and implemented using the <a href="https://material-ui.com">Material UI</a> library of <a href="http://reactjs.org">React</a> components.
           </Typography>
           <Typography variant="body1">
-            This style guide was developed to showcase key elements of the HuBMAP Portal theme designed for Material UI. 
+            This style guide was developed to showcase key elements of the HuBMAP Portal theme designed for Material UI.
             Generally, developers should refer to Material and Material UI documentation for information about look and feel as well as functionality.
             This style guide will evolve along with the development of the HuBMAP Portal user interfaces.
           </Typography>
@@ -207,7 +207,7 @@ function Home() {
                       HuBMAP Consortium
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                      Members of the HuBMAP consortium are developing the tools to create an open, global atlas of the human body at the cellular level. 
+                      Members of the HuBMAP consortium are developing the tools to create an open, global atlas of the human body at the cellular level.
                       These tools and maps will be openly available, to accelerate understanding of the relationships between cell and
                       tissue organization and function and human health.
                     </Typography>
@@ -254,7 +254,7 @@ function Home() {
 function Header() {
   const classes = useStyles();
 
-  return (    
+  return (
     <AppBar position="sticky" elevation={0}>
       <Container maxWidth="lg">
       <Toolbar>
@@ -291,7 +291,7 @@ function HubmapType(props) {
         c-2.21,4.72-6.27,8.34-12.18,10.86c-5.91,2.53-13.63,3.79-23.17,3.79h-11.71v64.99h-43.64V0.47z M649.18,28.08v41.06
         c1.24,0.07,2.31,0.1,3.21,0.1c4.01,0,6.79-0.95,8.34-2.84c1.55-1.89,2.33-5.83,2.33-11.81V41.34c0-5.52-0.9-9.1-2.7-10.76
         C658.58,28.91,654.84,28.08,649.18,28.08z"/>
-    </svg>    
+    </svg>
   );
 }
 
