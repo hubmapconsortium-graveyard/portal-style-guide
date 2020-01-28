@@ -10,12 +10,13 @@ import Header from './Header';
 import Footer from './Footer';
 
 
-export default function TypographyDemo() {
+export default function TypographyDemo(props) {
+  const { headerLinks } = props;
   const theme = useTheme();
 
   return (
     <Grid>
-      <Header />
+      <Header>{headerLinks}</Header>
       <Container maxWidth="lg">
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
         <Typography variant="h1" gutterBottom>

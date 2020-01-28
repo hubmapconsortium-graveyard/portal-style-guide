@@ -11,6 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import hubmaplogo from './hubmap-person.svg';
 import TypographyDemo from './TypographyDemo';
@@ -19,30 +20,36 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function App() {
+  const headerLinks = [
+      <Button color="inherit" component={Link} to="/" key="1">Home</Button>,
+      <Button color="inherit" component={Link} to="/palette" key="2">Palette</Button>,
+      <Button color="inherit" component={Link} to="/typography" key="3">Typography</Button>,
+  ]
 
   return (
     <Router basename="/">
       <Switch>
         <Route path="/palette">
-          <PaletteDemo />
+          <PaletteDemo headerLinks={headerLinks}/>
         </Route>
         <Route path="/typography">
-          <TypographyDemo />
+          <TypographyDemo headerLinks={headerLinks}/>
         </Route>
         <Route path="/">
-          <Home />
+          <Home headerLinks={headerLinks}/>
         </Route>
       </Switch>
     </Router>
   );
 }
 
-export function Home() {
+export function Home(props) {
+  const { headerLinks } = props;
   const theme = useTheme();
 
   return (
     <Grid>
-      <Header />
+      <Header>{headerLinks}</Header>
       <Container maxWidth="lg">
         <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
           <Typography variant="h1" gutterBottom>
@@ -109,7 +116,7 @@ export function Home() {
             </Typography>
           </Grid>
         </Grid>
-        </Container>
+      </Container>
       <Footer/>
     </Grid>
   );

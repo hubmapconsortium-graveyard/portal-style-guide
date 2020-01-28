@@ -12,13 +12,14 @@ import MessageBar from './MessageBar';
 import hubmaplogo from './hubmap-person.svg';
 import { useStyles } from './styles';
 
-export default function PaletteDemo() {
+export default function PaletteDemo(props) {
+  const { headerLinks } = props;
   const theme = useTheme();
   const classes = useStyles();
 
   return (
     <Grid>
-      <Header />
+      <Header>{headerLinks}</Header>
       <Container maxWidth="lg">
 
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
