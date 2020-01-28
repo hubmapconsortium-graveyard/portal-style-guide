@@ -2,8 +2,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Paper } from '@material-ui/core';
-import { Container } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -13,17 +11,14 @@ import Hyperlink from '@material-ui/core/Link';
 import hubmaplogo from '../../hubmap-person.svg';
 import Button from '@material-ui/core/Button';
 
-import Header from '../../Header';
-import Footer from '../../Footer';
+import HubmapPage from '../HubmapPage';
 
 export default function HomePage(props) {
   const { headerLinks } = props;
   const theme = useTheme();
 
   return (
-    <Grid>
-      <Header>{headerLinks}</Header>
-      <Container maxWidth="lg">
+    <HubmapPage headerLinks={headerLinks}>
         <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
           <Typography variant="h1" gutterBottom>
             HuBMAP Portal Style Guide
@@ -89,8 +84,6 @@ export default function HomePage(props) {
             </Typography>
           </Grid>
         </Grid>
-      </Container>
-      <Footer/>
-    </Grid>
+    </HubmapPage>
   );
 }
