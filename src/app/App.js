@@ -14,8 +14,8 @@ import { Container } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import hubmaplogo from './hubmap-person.svg';
-import TypographyDemo from './TypographyDemo';
-import PaletteDemo from './PaletteDemo';
+import TypographyPage from './TypographyPage';
+import PalettePage from './PalettePage';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -30,10 +30,10 @@ export default function App() {
     <Router basename="/">
       <Switch>
         <Route path="/palette">
-          <PaletteDemo headerLinks={headerLinks}/>
+          <PalettePage headerLinks={headerLinks}/>
         </Route>
         <Route path="/typography">
-          <TypographyDemo headerLinks={headerLinks}/>
+          <TypographyPage headerLinks={headerLinks}/>
         </Route>
         <Route path="/">
           <Home headerLinks={headerLinks}/>

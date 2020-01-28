@@ -10,7 +10,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 
-export default function TypographyDemo(props) {
+export default function TypographyPage(props) {
   const { headerLinks } = props;
   const theme = useTheme();
 

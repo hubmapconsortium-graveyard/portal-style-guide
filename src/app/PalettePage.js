@@ -12,7 +12,7 @@ import MessageBar from './MessageBar';
 import hubmaplogo from './hubmap-person.svg';
 import { useStyles } from './styles';
 
-export default function PaletteDemo(props) {
+export default function PalettePage(props) {
   const { headerLinks } = props;
   const theme = useTheme();
   const classes = useStyles();
