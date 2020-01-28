@@ -14,8 +14,8 @@ import { Container } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import hubmaplogo from './hubmap-person.svg';
-import TypographyPage from './TypographyPage';
-import PalettePage from './PalettePage';
+import TypographyPage from './pages/typography/TypographyPage';
+import PalettePage from './pages/palette/PalettePage';
 import Header from './Header';
 import Footer from './Footer';
 

@@ -5,12 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
 import { Container } from '@material-ui/core';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../../Header';
+import Footer from '../../Footer';
 import Palette from './Palette';
-import MessageBar from './MessageBar';
-import hubmaplogo from './hubmap-person.svg';
-import { useStyles } from './styles';
+import MessageBar from '../../MessageBar';
+import hubmaplogo from '../../hubmap-person.svg';
+import { useStyles } from '../../styles';
 
 export default function PalettePage(props) {
   const { headerLinks } = props;

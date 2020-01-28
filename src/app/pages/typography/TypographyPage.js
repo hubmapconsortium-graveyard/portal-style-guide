@@ -6,8 +6,8 @@ import { Paper } from '@material-ui/core';
 import { Container } from '@material-ui/core';
 
 import Types from './Types';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../../Header';
+import Footer from '../../Footer';
 
 
 export default function TypographyPage(props) {
