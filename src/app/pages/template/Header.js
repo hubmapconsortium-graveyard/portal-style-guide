@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Container } from '@material-ui/core';
 
-import { useStyles } from './styles';
+import { useStyles } from '../../styles';
 
 export default function Header(props) {
   const { children } = props;

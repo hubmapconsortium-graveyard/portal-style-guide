@@ -8,7 +8,7 @@ import Palette from './Palette';
 import MessageBar from '../../MessageBar';
 import hubmaplogo from '../../hubmap-person.svg';
 import { useStyles } from '../../styles';
-import HubmapPage from '../HubmapPage';
+import HubmapPage from '../template/TemplatePage';
 
 export default function PalettePage(props) {
   const { headerLinks } = props;

@@ -11,7 +11,7 @@ import Hyperlink from '@material-ui/core/Link';
 import hubmaplogo from '../../hubmap-person.svg';
 import Button from '@material-ui/core/Button';
 
-import HubmapPage from '../HubmapPage';
+import HubmapPage from '../template/TemplatePage';
 
 export default function HomePage(props) {
   const { headerLinks } = props;
