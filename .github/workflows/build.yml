@@ -18,13 +18,12 @@ jobs:
         node-version: '12.x'
     - run: npm install
     - run: npm run build:app --if-present
+    - run: npm run build:bundle
     - run: npm test
       env:
         CI: true
 
-    - name: Deploy
-      # TODO: Make sure the build works with every commit,
-      # but only push on merge to master.
+    - name: Deploy to GH Pages
       if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
@@ -32,3 +31,7 @@ jobs:
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: build # The folder the action should deploy.
         CLEAN: true
+
+    - name: Deploy to GH Registry
+      if: github.ref == 'refs/heads/master'
+      run: npm publish
