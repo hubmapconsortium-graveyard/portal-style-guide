@@ -2,10 +2,11 @@
   "name": "@hubmapconsortium/portal-style-guide",
   "version": "0.0.1",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/hubmapconsortium",
-  }
+    "registry": "https://npm.pkg.github.com/hubmapconsortium"
+  },
   "homepage": "http://hubmapconsortium.github.io/portal-style-guide",
   "repository": "https://github.com/hubmapconsortium/portal-style-guide.git",
+  "files": ["dist"],
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
