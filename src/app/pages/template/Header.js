@@ -2,26 +2,22 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-import { Link } from 'react-router-dom';
 import { Container } from '@material-ui/core';
 
-import { useStyles } from './styles';
+import { useStyles } from '../../styles';
 
-export default function Header() {
+export default function Header(props) {
+  const { children } = props;
   const classes = useStyles();
 
   return (
     <AppBar position="sticky" elevation={0}>
       <Container maxWidth="lg">
-      <Toolbar>
-        <HubmapType className={classes.hubmaptypeLight}/>
-        <Typography variant="h5" className={classes.title}>
-        </Typography>
-        <Button color="inherit" component={Link} to="/">Home</Button>
-        <Button color="inherit" component={Link} to="/palette">Palette</Button>
-        <Button color="inherit" component={Link} to="/typography">Typography</Button>
-      </Toolbar>
+        <Toolbar>
+          <HubmapType className={classes.hubmaptypeLight}/>
+          <Typography variant="h5" className={classes.title}/>
+          {children}
+        </Toolbar>
       </Container>
     </AppBar>
   );

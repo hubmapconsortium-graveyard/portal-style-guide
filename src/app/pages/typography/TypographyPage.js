@@ -3,20 +3,17 @@ import Typography from '@material-ui/core/Typography';
 import { useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
-import { Container } from '@material-ui/core';
 
 import Types from './Types';
-import Header from './Header';
-import Footer from './Footer';
+import HubmapPage from '../template/TemplatePage';
 
 
-export default function TypographyDemo() {
+export default function TypographyPage(props) {
+  const { headerLinks } = props;
   const theme = useTheme();
 
   return (
-    <Grid>
-      <Header />
-      <Container maxWidth="lg">
+    <HubmapPage headerLinks={headerLinks}>
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
         <Typography variant="h1" gutterBottom>
           Typography
@@ -36,8 +33,6 @@ export default function TypographyDemo() {
           <Types />
         </Paper>
       </Grid>
-      </Container>
-      <Footer />
-    </Grid>
+    </HubmapPage>
   );
 }

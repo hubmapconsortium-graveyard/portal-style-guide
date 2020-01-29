@@ -3,24 +3,20 @@ import Typography from '@material-ui/core/Typography';
 import { useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Paper } from '@material-ui/core';
-import { Container } from '@material-ui/core';
 
-import Header from './Header';
-import Footer from './Footer';
 import Palette from './Palette';
-import MessageBar from './MessageBar';
-import hubmaplogo from './hubmap-person.svg';
-import { useStyles } from './styles';
+import MessageBar from '../../MessageBar';
+import hubmaplogo from '../../hubmap-person.svg';
+import { useStyles } from '../../styles';
+import HubmapPage from '../template/TemplatePage';
 
-export default function PaletteDemo() {
+export default function PalettePage(props) {
+  const { headerLinks } = props;
   const theme = useTheme();
   const classes = useStyles();
 
   return (
-    <Grid>
-      <Header />
-      <Container maxWidth="lg">
-
+    <HubmapPage headerLinks={headerLinks}>
       <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
         <Typography variant="h1" gutterBottom>
           Palette
@@ -32,7 +28,6 @@ export default function PaletteDemo() {
           The colors used in the Material UI color theme for the HuBMAP Portal were inspired by the artwork of the HuBMAP logo designed by NIH.
         </Typography>
       </Grid>
-
       <Grid container>
         <Grid item sm={12} lg={12} style={{ padding: theme.spacing(2) }}>
           <Typography variant="h3" gutterBottom>
@@ -85,9 +80,6 @@ export default function PaletteDemo() {
         </Grid>
 
       </Grid>
-
-      </Container>
-      <Footer />
-    </Grid>
+    </HubmapPage>
   );
 }
