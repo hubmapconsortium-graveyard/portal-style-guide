@@ -21,7 +21,7 @@ export default function HomePage(props) {
     <HubmapPage headerLinks={headerLinks}>
         <Grid item xs={12} style={{ padding: theme.spacing(2) }}>
           <Typography variant="h1" gutterBottom>
-            HuBMAP Portal Style Guide!
+            The HuBMAP Portal Style Guide
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
             A lightweigt style guide based on the Material Design Language.
