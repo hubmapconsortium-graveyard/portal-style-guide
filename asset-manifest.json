@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/portal-style-guide/static/js/main.9eb398f3.chunk.js",
+    "main.js.map": "/portal-style-guide/static/js/main.9eb398f3.chunk.js.map",
+    "runtime-main.js": "/portal-style-guide/static/js/runtime-main.78abdacb.js",
+    "runtime-main.js.map": "/portal-style-guide/static/js/runtime-main.78abdacb.js.map",
+    "static/css/2.e177e21c.chunk.css": "/portal-style-guide/static/css/2.e177e21c.chunk.css",
+    "static/js/2.79bb621c.chunk.js": "/portal-style-guide/static/js/2.79bb621c.chunk.js",
+    "static/js/2.79bb621c.chunk.js.map": "/portal-style-guide/static/js/2.79bb621c.chunk.js.map",
+    "index.html": "/portal-style-guide/index.html",
+    "precache-manifest.76f24c33fe3dceff339b1ec34370a0d1.js": "/portal-style-guide/precache-manifest.76f24c33fe3dceff339b1ec34370a0d1.js",
+    "service-worker.js": "/portal-style-guide/service-worker.js",
+    "static/css/2.e177e21c.chunk.css.map": "/portal-style-guide/static/css/2.e177e21c.chunk.css.map",
+    "static/js/2.79bb621c.chunk.js.LICENSE": "/portal-style-guide/static/js/2.79bb621c.chunk.js.LICENSE",
+    "static/media/inter.css": "/portal-style-guide/static/media/Inter.var.feca908d.woff2",
+    "static/media/hubmap-person.svg": "/portal-style-guide/static/media/hubmap-person.fc9beb0d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78abdacb.js",
+    "static/css/2.e177e21c.chunk.css",
+    "static/js/2.79bb621c.chunk.js",
+    "static/js/main.9eb398f3.chunk.js"
+  ]
+}
