@@ -1,3 +1,7 @@
+## 💥 *Deprecated and archived* 💥
+
+[portal-ui](https://github.com/hubmapconsortium/portal-ui) now uses [Storybook](https://storybook.js.org/), and we have experimented with CI deployments to [Chromatic](https://www.chromatic.com/). At the same time, the idea that different teams could use a shared React library never bore fruit.
+
 # Portal style guide
 
 Source code for the Material-UI style guide for HuBMAP.
